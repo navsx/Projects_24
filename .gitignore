@@ -131,3 +131,6 @@ dist
 
 #virtual environment
 venv/
+
+#models
+ncert-podcaster/models/
