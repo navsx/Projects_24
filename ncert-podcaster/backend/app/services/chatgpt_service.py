@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = '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'
+openai.api_key = 'api key'
 
 def get_chatgpt_response(prompt):
     try:
