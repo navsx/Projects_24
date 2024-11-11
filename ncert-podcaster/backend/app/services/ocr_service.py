@@ -15,7 +15,7 @@ def extract_text_from_pdf(pdf_path):
         return ""
 
 # Example of usage:
-if __name__ == "__main__":
-    text = extract_text_from_pdf('D:\Data\2024\Projects_24\ncert-podcaster\data\raw_textbooks\Flamingo.pdf')
-    print(text)
+#if __name__ == "__main__":
+#    text = extract_text_from_pdf('D:\Data\2024\Projects_24\ncert-podcaster\data\raw_textbooks\Flamingo.pdf')
+#    print(text)
 
