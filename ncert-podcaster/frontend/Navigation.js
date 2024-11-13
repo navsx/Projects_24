@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import InteractionScreen from './screens/InteractionScreen';
 
+
 const Stack = createStackNavigator();
 
 const Navigation = () => {
