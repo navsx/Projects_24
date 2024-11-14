@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const HomeScreen = ({ navigation }) => {
+  console.log('Rendering HomeScreen');
   return (
     <View style={styles.container}>
       <Header />

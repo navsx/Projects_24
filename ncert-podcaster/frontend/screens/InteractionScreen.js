@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const InteractionScreen = () => {
+  console.log('InteractionScreen rendered');
   const [recording, setRecording] = useState(null);
   const [transcription, setTranscription] = useState('');
   const [audioUrl, setAudioUrl] = useState('');
