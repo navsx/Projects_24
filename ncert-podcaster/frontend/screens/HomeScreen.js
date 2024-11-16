@@ -11,7 +11,7 @@ const HomeScreen = ({ navigation }) => {
       <Header />
       <Card style={styles.card}>
         <Card.Content>
-          <Title>Welcome to NCERT Podcaster</Title>
+          <Title>Welcome to KVS Podcaster</Title>
           <Paragraph>
             Explore NCERT textbook content with interactive audio features.
           </Paragraph>
@@ -19,9 +19,9 @@ const HomeScreen = ({ navigation }) => {
         <Card.Actions>
           <Button
             mode="contained"
-            onPress={() => navigation.navigate('Interaction')}
+            onPress={() => navigation.navigate('Chat')}
           >
-            Start Interaction
+            Ask Query
           </Button>
         </Card.Actions>
       </Card>

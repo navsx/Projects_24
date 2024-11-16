@@ -22,15 +22,7 @@ const StackNavigator = () => (
         headerTintColor: '#fff',
       }}
     />
-    <Stack.Screen
-      name="Interaction"
-      component={InteractionScreen}
-      options={{
-        title: 'Voice Interaction',
-        headerStyle: { backgroundColor: '#007bff' },
-        headerTintColor: '#fff',
-      }}
-    />
+    
     <Stack.Screen
       name="Chat"
       component={ChatScreen}

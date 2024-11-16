@@ -1,19 +1,13 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
-import { Button, Avatar, TextInput, IconButton } from 'react-native-paper';
+import { Button, Avatar, TextInput } from 'react-native-paper';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 const Tab = createMaterialTopTabNavigator();
 
 const ChatScreen = () => {
-  const [isRecording, setIsRecording] = useState(false);
-
-  const handleAudioToggle = () => {
-    setIsRecording(!isRecording);
-    // Implement audio recording logic here
-  };
-
+  console.log('Rendering Chat Screen');
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
@@ -25,19 +19,6 @@ const ChatScreen = () => {
         <Tab.Screen name="Quiz Mode" component={QuizTab} />
         <Tab.Screen name="Visual Aids" component={VisualTab} />
       </Tab.Navigator>
-      <View style={styles.audioContainer}>
-        <IconButton
-          icon={isRecording ? "microphone-off" : "microphone"}
-          color={isRecording ? "red" : "black"}
-          size={30}
-          onPress={handleAudioToggle}
-        />
-        <TextInput
-          label="Type a message..."
-          style={styles.input}
-          right={<TextInput.Icon name="send" />}
-        />
-      </View>
     </SafeAreaView>
   );
 };
@@ -45,6 +26,11 @@ const ChatScreen = () => {
 const ChatTab = () => (
   <ScrollView style={styles.tabContent}>
     <Text>Chat with AI here.</Text>
+    <TextInput
+      label="Type a message..."
+      style={styles.input}
+      right={<TextInput.Icon name="send" />}
+    />
   </ScrollView>
 );
 
@@ -85,14 +71,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginVertical: 8,
   },
-  audioContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingBottom: 16,
-  },
   input: {
-    flex: 1,
+    marginTop: 16,
   },
 });
 

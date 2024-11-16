@@ -6,13 +6,10 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { StatusBar } from 'expo-status-bar';
 import HomeScreen from './screens/HomeScreen';
-//import InteractionScreen from './screens/InteractionScreen';
-import ChatScreen from './screens/ChatScreen';
+import InteractionScreen from './screens/InteractionScreen';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
-
-console.log('Rendering App.js');
 
 // First, create the stack navigator configuration
 const MainStack = () => (
@@ -21,16 +18,16 @@ const MainStack = () => (
       name="Home" 
       component={HomeScreen}
       options={{
-        title: 'KVS Podcaster',
+        title: 'NCERT Podcaster',
         headerStyle: { backgroundColor: '#007bff' },
         headerTintColor: '#fff',
       }}
     />
-    <Stack.Screen
-      name="Chat"
-      component={ChatScreen}
+    <Stack.Screen 
+      name="Interaction" 
+      component={InteractionScreen}
       options={{
-        title: 'ChatScreen',
+        title: 'Voice Interaction',
         headerStyle: { backgroundColor: '#007bff' },
         headerTintColor: '#fff',
       }}
