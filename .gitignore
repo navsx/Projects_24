@@ -134,3 +134,6 @@ venv/
 
 #models
 ncert-podcaster/models/
+
+
+ncert-podcaster/frontend/utils/huggingFace.js
